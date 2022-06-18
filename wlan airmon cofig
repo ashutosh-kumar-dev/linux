@@ -1,0 +1,13 @@
+airmon-ng start wlan0 ==========> monitor mode will start
+
+airmon-ng check kill ============>2nd step
+
+
+===========FOR DELETING WLN0 AFTER MONITOR MODE=============
+iw dev wlan0 interface del
+
+=============FOR ENABLE WLAN0 AFTER DELETING============
+iw phy phy0 interface add wlan0 type managed
+
+============= service NetworkManager start =============
+service NetworkManager start 
