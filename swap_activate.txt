@@ -1,0 +1,6 @@
+1. all in sudo su
+2. type "blkid" and copy the UUID of type = SWAP
+3. type "  gedit /etc/fstab  " and change the SWAP UUID of the above step.
+4. SAVE it .(terminal show something but that is OK )
+5. open gparted and SWAP ON the swap partition .
+6. RESTART PC.
